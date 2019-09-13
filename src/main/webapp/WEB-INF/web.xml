@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee  	http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <display-name>My First Servlet Application</display-name>
+
+    <context-param>
+        <param-name>email</param-name>
+        <param-value>annabaku0505@gmail.com</param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>MyNameServlet</servlet-name>
+        <servlet-class>com.servlet.MyNameServlet</servlet-class>
+        <init-param>
+            <param-name>name</param-name>
+            <param-value>Anna Bakurevich</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MyNameServlet</servlet-name>
+        <url-pattern>/sayMyName</url-pattern>
+    </servlet-mapping>
+</web-app>
